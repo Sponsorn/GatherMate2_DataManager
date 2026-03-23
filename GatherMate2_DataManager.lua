@@ -356,10 +356,18 @@ frame:RegisterEvent("PLAYER_LOGIN")
 frame:SetScript("OnEvent", function(self, event)
     self:UnregisterEvent(event)
 
+    -- Register into GM2 settings immediately so the entry is always visible
     local Config = GatherMate2:GetModule("Config")
     if Config then
         Config:RegisterModule(L["DataManager"], options)
     end
+
+    -- Delay tree population to ensure GM2 storage addons have registered
+    C_Timer.After(1, function()
+        ns.GetGroupedData()
+        if ns.Export.Init then ns.Export.Init() end
+        if ns.Cleanup.Init then ns.Cleanup.Init() end
+    end)
 end)
 
 -- Make options accessible to other files
