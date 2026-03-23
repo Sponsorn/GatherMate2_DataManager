@@ -18,3 +18,4 @@ Localizations.lua
 GatherMate2_DataManager.lua
 Export.lua
 Import.lua
+Cleanup.lua
