@@ -16,3 +16,4 @@ libs\AceSerializer-3.0\AceSerializer-3.0.xml
 
 Localizations.lua
 GatherMate2_DataManager.lua
+Export.lua
