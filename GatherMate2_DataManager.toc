@@ -1,0 +1,18 @@
+## Interface: 120001
+## Title: GatherMate2 Data Manager
+## Notes: Import, export, and manage GatherMate2 node data
+## Author: Dede in-game / Sponsorn on curseforge & github
+## Version: @project-version@
+## Dependencies: GatherMate2
+## IconTexture: Interface\AddOns\GatherMate2\Artwork\Icon.tga
+## Category: Map
+## X-License: GPL v3
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+libs\LibBase64-1.0\LibBase64-1.0.lua
+libs\LibDeflate\LibDeflate.lua
+libs\AceSerializer-3.0\AceSerializer-3.0.xml
+
+Localizations.lua
+GatherMate2_DataManager.lua
